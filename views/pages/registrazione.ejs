@@ -1,0 +1,32 @@
+<main>
+  <form action="/registrazione" method="post">
+    <% if(msg) { %>
+    <p><%= msg %></p>
+    <% } %>
+    <input
+      type="text"
+      name="nome"
+      placeholder="nome*"
+      value="<%= valori.nome %>"
+    />
+    <input
+      type="text"
+      name="email"
+      placeholder="email*"
+      value="<%= valori.email %>"
+    />
+    <input
+      type="text"
+      name="username"
+      placeholder="username*"
+      value="<%= valori.username %>"
+    />
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="password*"
+    />
+    <input type="submit" value="registrati" />
+  </form>
+</main>
